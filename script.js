@@ -8,30 +8,30 @@ function defaultBrowser(url){
     return 0;
   }
   let a = window.open("about:blank");
-   a.document.write(`
-  <html>
-    <head>
-      <title>Google Doc</title>
-      <style>
-        html, body {
-          margin: 0;
-          padding: 0;
-          height: 100%;
-          width: 100%;
-          overflow: hidden;
-        }
-        object {
-          width: 100%;
-          height: 100%;
-          border: none;
-        }
-      </style>
-    </head>
-    <body>
-      <object data="`+url+`"></object>
-    </body>
-  </html>
-`);
+   a.document.write('\n'+
+  '<html>' +
+  '  <head>' +
+  '    <title>Google Doc</title>' +
+  '    <style>' +
+  '      html, body {' +
+  '        margin: 0;' +
+  '        padding: 0;' +
+  '        height: 100%;' +
+  '        width: 100%;' +
+  '        overflow: hidden;' +
+  '      }' +
+  '      object {' +
+  '        width: 100%;' +
+  '        height: 100%;' +
+  '        border: none;' +
+  '      }' +
+  '    </style>' +
+  '  </head>' +
+  '  <body>' +
+  '    <object data="'+url+'"></object>' +
+  '  </body>' +
+  '</html>' +
+'');
    a.document.close();
 }
 function cookieclicker(){
@@ -43,7 +43,7 @@ fetch("https://thatkidfr.github.io/index.html")
 
     let patched = html.replace(
       /<head>/i,
-      `<head><base href="https://thatkidfr.github.io/">`
+      '<head><base href="https://thatkidfr.github.io/">'
     );
 
     a.document.open();
@@ -60,7 +60,7 @@ fetch("https://thatkidfr.github.io/passwordwithvercel/index.html")
 
     let patched = html.replace(
       /<head>/i,
-      `<head><base href="https://thatkidfr.github.io/passwordwithvercel/">`
+      '<head><base href="https://thatkidfr.github.io/passwordwithvercel/">'
     );
 
     a.document.open();
@@ -80,156 +80,65 @@ function minecraft188(){
 
   
    let a = window.open("about:blank");
-   a.document.write(`
-  <html>
-    <head>
-      <title>Google Doc</title>
-      <style>
-        html, body {
-          margin: 0;
-          padding: 0;
-          height: 100%;
-          width: 100%;
-          overflow: hidden;
-        }
-        object {
-          width: 100%;
-          height: 100%;
-          border: none;
-        }
-      </style>
-    </head>
-    <body>
-      <object data="https://eaglercraft-88a.pages.dev/" tabindex="0"></object>
-      <script>
-        document.querySelector("object").focus();
-      </script>
-    </body>
-    
-  </html>
-`);
+   a.document.write('\n'+
+  '<html>' +
+  '  <head>' +
+  '    <title>Google Doc</title>' +
+  '    <style>' +
+  '      html, body {' +
+  '        margin: 0;' +
+  '        padding: 0;' +
+  '        height: 100%;' +
+  '        width: 100%;' +
+  '        overflow: hidden;' +
+  '      }' +
+  '      object {' +
+  '        width: 100%;' +
+  '        height: 100%;' +
+  '        border: none;' +
+  '      }' +
+  '    </style>' +
+  '  </head>' +
+  '  <body>' +
+  '    <object data="https://eaglercraft-88a.pages.dev/"></object>' +
+  '  </body>' +
+  '</html>' +
+'');
    a.document.close();
 }
 function credits(){
    let a = window.open("about:blank");
-   a.document.write(`
-  <html>
-    <head>
-      <title>Google Doc</title>
-      <style>
-        html, body {
-          margin: 0;
-          padding: 0;
-          height: 100%;
-          width: 100%;
-        }
-      </style>
-    </head>
-    <body>
-      <h2>Developed by a student at Leigh High</h2>
-      <h3>Help from another student at Leigh High</h3>
-      <strong><h3>LHS Proxy</h3></strong>
-      <ul>
-      <li>P​​r​​o​​x​​y front and backend deployed and put together by site owner</li>
-      <li>P​​r​​o​​x​​​y front-end created by another student</li>
-      <li>U​​​​l​​t​​​​​​r​​a​​​​v​​i​​​​​o​l​​​e​​​t​ p​​​​ro​​​​​x​​​​​​y backend</li>
-      </ul>
-      <p style="color: white;">The front-end is pretty sigma</p>
-      <p>Not much else to say I guess</p>
-      <p style="color: white;">Goguardian is so dogwater</p>
-    </body>
-    
-  </html>
-`);
-   a.document.close();
+
+fetch("https://thatkidfr.github.io/credits/index.html")
+  .then(r => r.text())
+  .then(html => {
+
+    let patched = html.replace(
+      /<head>/i,
+      '<head><base href="https://thatkidfr.github.io/credits">'
+    );
+
+    a.document.open();
+    a.document.write(patched);
+    a.document.close();
+  });
 }
 function logs(){
    let a = window.open("about:blank");
-   a.document.write(`
-  <html>
-    <head>
-      <title>Google Doc</title>
-      <style>
-        html, body {
-          margin: 0;
-          padding: 0;
-          height: 100%;
-          width: 100%;
-        }
-      </style>
-    </head>
-    <body>
-      <h2>Current - 3.1</h2>
-      <h3>More games coming soon!</h3>
-      <h3>THE FINALE - Security update v4 coming eventually</h3>
-      <h1>LHS 3</h1>
-      <ul>
-      <li>UUID Security</li>
-      <li>Faster Site Access</li>
-      </ul>
-      <h3>3.2</h3>
-      <ul>
-      <li>Nvm</li>
-      <li>Added another link for MC in case one stops working</li>
-      </ul>
-      <h3>3.1</h3>
-      <ul>
-      <li>Added COD Zombies</li>
-      <li>Removed BSS - May be added back later</li>
-      <li>Added Race Survival Arena King</li>
-      <li>Added Ultrakill</li>
-      <li>Added 1v1.lol</li>
-      <li>Added Retro Bowl College</li>
-      <li>Added Getting Over It</li>
-      <li>Added Clicker Heroes</li>
-      </ul>
-      <h1>LHS 2</h1>
-      <ul>
-      <li>Canvas Security</li>
-      <li>Added Games</li>
-      </ul>
-      <h3>2.4</h3>
-      <ul>
-      <li>Added New Polytrack</li>
-      <li>Added Bee Swarm Simulator *bugged*</li>
-      <li>Added Help Button</li>
-      </ul>
-      <h3>2.3</h3>
-      <ul>
-      <li>Added Extra Games for Beta Testing</li>
-      <li>Added Hollow Knight</li>
-      <li>Added Polytrack</li>
-      </ul>
-      <h3>2.2</h3>
-      <ul>
-      <li>Added Form Suggestions</li>
-      <li>Added BlackJack</li>
-      <li>Added Retro Bowl</li>
-      <li>Added 2048</li>
-      <li>Added Drive Mad</li>
-      </ul>
-      <h3>2.1</h3>
-      <ul>
-      <li>Added credits page</li>
-      <li>Added logs page</li>
-      </ul>
-      <h3>2.0</h3>
-      <ul>
-      <li>Canvas Security</li>
-      <li>Games Added</li>
-      <li>Instant Redirect</li>
-      </ul>
-      <h1>LHS 1</h1>
-      <ul>
-      <li>Proxy Only</li>
-      <li>Obfuscated Code Access</li>
-      <li>Release of LHS</li>
-      </ul>
-    </body>
-    
-  </html>
-`);
-   a.document.close();
+
+fetch("https://thatkidfr.github.io/logs/index.html")
+  .then(r => r.text())
+  .then(html => {
+
+    let patched = html.replace(
+      /<head>/i,
+      '<head><base href="https://thatkidfr.github.io/logs">'
+    );
+
+    a.document.open();
+    a.document.write(patched);
+    a.document.close();
+  });
 }
 function help(){
   alert("Ask in discord: https://discord.gg/2Mwf5URA OR email robodave699@gmail.com about any questions/reports - DO NOT USE SCHOOL EMAIL: IT WILL NOT SEND");
@@ -258,6 +167,16 @@ document.addEventListener('keydown', function(event) {
       btn.onclick = () => defaultBrowser(url);
       document.body.appendChild(btn);
     }
+      // Add title above buttons
+      const title = document.createElement('h1');
+      title.textContent = 'Alpha Games';
+      title.style.fontWeight = 'bold';
+      title.style.fontFamily = 'Arial, sans-serif';
+      title.style.fontSize = '32px';
+      title.style.textAlign = 'center';
+      title.style.marginTop = '20px';
+      title.style.color = '#d6200f'; // optional - makes it white if you have a dark background
+      document.body.appendChild(title);
 
     const helpBtn = document.createElement('button');
     helpBtn.textContent = 'Help';
@@ -298,6 +217,11 @@ document.addEventListener('keydown', function(event) {
     createButton('1v1.lol', '#19acbd', '#1697a6', 'https://development.churchinhuntsville.org/resources/semag/1v1lol/index.html');
     createButton('Getting Over It', '#26c9b9', '#20ab9d', 'https://development.churchinhuntsville.org/resources/semag/getting-over-it/index.html');
     createButton('Clicker Heroes', '#28d439', '#1db52c', 'https://development.churchinhuntsville.org/resources/semag/clickerheroes/index.html');
+    createButton('Tennis', '#1fdb51', '#18b542', 'https://thatkidfr.github.io/tennis');
+    createButton('Shell Shock', '#eb8c34', '#c4752b', 'https://shellshock.io/');
+    createButton('Balatro', '#3498db', '#2980b9', 'https://school.endtimeassembly.org/games/balatro/index.html');
+    createButton('Buckshot Roulette', '#3498db', '#2980b9', 'https://school.endtimeassembly.org/games/buckshot/index.html');
+    createButton('Subway Surfers', '#d82cdb', '#b322b5', 'https://development.churchinhuntsville.org/resources/semag/subway-surfers-ny/index.html');
 
 
     
